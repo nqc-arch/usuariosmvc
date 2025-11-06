@@ -106,6 +106,7 @@ public class View extends JFrame {
         model.addColumn("User");
         model.addColumn("Email");
         usersTable.setModel(model);
+        usersTable.setPreferredScrollableViewportSize(new Dimension(usersScrollPane.getPreferredSize().width, 100));
         c.gridx = 0;
         c.gridy = 4;
         c.gridwidth = 3;
